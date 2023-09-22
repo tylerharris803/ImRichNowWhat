@@ -2105,7 +2105,19 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+/* Hide the below-800 version on screens above 800 pixels */
+@media (min-width: 801px) {
+  #all-steps-below-800 {
+      display: none;
+  }
+}
 
+/* Hide the above-800 version on screens below 800 pixels */
+@media (max-width: 800px) {
+  #all-steps-above-800 {
+      display: none;
+  }
+}
 .form-control {
   display: block;
   width: 100%;
@@ -2178,6 +2190,39 @@ progress {
 }
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
+}
+.all-steps {
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap to the next line */
+}
+/* Default style for the image */
+.img-responsive {
+  width: 100%; /* Make the image 100% width of its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Style for screens below 800 pixels */
+@media (max-width: 799px) {
+  .img-responsive {
+      max-width: 80%; /* Adjust the max-width to control the size */
+      height: auto; /* Maintain the aspect ratio */
+  }
+}
+.step-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  margin-right: 10px; /* Add spacing between the columns */
+}
+
+@media (max-width: 1000px) {
+  /* Styles for screens with a width less than 500 pixels */
+  .text-smaller {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+
+  .icon-smaller {
+    font-size: 16px; /* Adjust the icon size as needed */
+  }
 }
 
 .form-control-plaintext {
