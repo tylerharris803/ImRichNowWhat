@@ -40,7 +40,7 @@
             <!-- Page Content-->
             <div class="container px-5 my-5">
                 <div class="text-center mb-5 text-smaller">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline ">Let's Get Started</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0 text-smaller"><span class="text-gradient d-inline ">Let's Get Started</span></h1>
                     <br>
                     <h3 class="fs-3 fw-light text-muted text-smaller">Whether it's <strong>Graduation Money</strong>, <strong>Work Bonus</strong>, <strong>Comission Check</strong>, <strong>Will Payout</strong>, or something else, this calculator will tell you what to do with your new cash. </h3>
                 </div>
@@ -53,7 +53,7 @@
                                         <div class="card-body p-5">
                                             <div class="row align-items-center gx-5">
                                                 <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                    <h2 class=" text-center display-6 mb-0  text-primary"><span class="d-inline" id="register">The Cash Calculator</h2>
+                                                    <h2 class=" text-center display-6 mb-0  text-primary text-smaller"><span class="d-inline" id="register">The Cash Calculator</h2>
 
                                                     <div class="input-group">
 
@@ -63,18 +63,18 @@
                                                             
             
                                                             <div class="all-steps" id="all-steps"> 
-                                                            <span class="step icon-smaller" ><i class="fa fa-money"></i></span> 
-                                                            <span class="step icon-smaller"><i class="fa fa-credit-card"></i></span>
-                                                            <span class="step icon-smaller"><i class="fa fa-person-digging"></i></span>
-                                                            <span class="step icon-smaller"><i class="fa fa-house"></i></span>
-                                                            <span class="step icon-smaller"><i class="fa fa-umbrella"></i></span>
-                                                            <span class="step icon-smaller"><i class="fa fa-money-bill-trend-up"></i></span>                                                   
+                                                            <span class="step icon-smaller" ><i class="fa fa-money icon-smaller "></i></span> 
+                                                            <span class="step icon-smaller"><i class="fa fa-credit-card icon-smaller"></i></span>
+                                                            <span class="step icon-smaller"><i class="fa fa-person-digging icon-smaller"></i></span>
+                                                            <span class="step icon-smaller"><i class="fa fa-house icon-smaller"></i></span>
+                                                            <span class="step icon-smaller"><i class="fa fa-umbrella icon-smaller"></i></span>
+                                                            <span class="step icon-smaller"><i class="fa fa-money-bill-trend-up icon-smaller"></i></span>                                                   
                                                             </div>
                                             
                                                             <div class="tab">
                                                                 <h4 class="text-smaller">Initial Cash Amount</h4>
-                                                                <p class="text-muted text-smaller">How much money are you wanting to enter into this calculator? Please keep the amount between $100 and $100 million.</p>
-                                                                <p><input placeholder="$ Initial Amount" oninput="clearError(this)" onblur="validateInput(this)" name="amt"></p>
+                                                                <p class="text-muted text-much-smaller">How much money are you wanting to enter into this calculator? Please keep the amount between $100 and $100 million.</p>
+                                                                <p class="text-much-smaller"><input placeholder="$ Initial Amount" oninput="clearError(this)" onblur="validateInput(this)" name="amt"></p>
                                                             </div>
                                                             
                                                             <script>
@@ -104,33 +104,33 @@
                                                             <div class="tab">
                                                                 <h4 class="text-smaller">Credit Card Debt</h4>
                                                                 <p class="text-muted text-smaller">How much <strong>Credit Card Debt</strong> do you have? Credit Card Debt is money you owe from using a credit card that's not paid off yet.</p>
-                                                                <p><input placeholder="$ Credit Card Debt" onblur="validateNumberInput(this, 'ccDebt')"  name="ccDebt"></p>
+                                                                <p class="text-much-smaller"><input placeholder="$ Credit Card Debt" onblur="validateNumberInput(this, 'ccDebt')"  name="ccDebt"></p>
                                                             </div>
                                                             
                                                             
                                                             <div class="tab">
                                                                 <h4 class="text-smaller">Other High Interest Debt</h4>
                                                                 <p class="text-muted text-smaller">Do you have any other <strong>high interest debt</strong> aside from credit card debt? We consider any loan above a 10% APR as "High Interest Debt". Other high interest debts might include Payday Loans, Personal Loans, Auto Title Loans, etc... Please enter a specific amount.</p>
-                                                                <p><input placeholder="$ Other high interest debt" onblur="validateNumberInput(this, 'otherDebt')" name="otherDebt"></p>
+                                                                <p class="text-much-smaller"><input placeholder="$ Other high interest debt" onblur="validateNumberInput(this, 'otherDebt')" name="otherDebt"></p>
                                                             </div>
                                                             
                                                             <div class="tab">
                                                                 <h4 class="text-smaller">Montly Household Spend</h4>
                                                                 <p class="text-muted text-smaller">About how much does your household spend a month? This doesn't have to be exact. </p>
-                                                                <p><input placeholder="$ Monthly Household Spend" onblur="validateNumberInput(this, 'monthSpend')" name="monthSpend"></p>
+                                                                <p class="text-much-smaller"><input placeholder="$ Monthly Household Spend" onblur="validateNumberInput(this, 'monthSpend')" name="monthSpend"></p>
                                                             </div>
 
                                                             <div class="tab">
                                                                 <h4 class="text-smaller">Emergency Fund</h4>
                                                                 <p class="text-muted text-smaller">How much do you have set aside as an emergecy fund?  </p>
                                                                 <p class="text-muted2">An <strong>Emergency Fund</strong> is a pool of money set aside to help you cover unexpected or urgent expenses that might come up in your life. It acts like a safety net to provide financial security when unexpected events occur, such as medical emergencies, car repairs, job loss, or other unforeseen situations. </p>
-                                                                <p><input placeholder="$ Current Emergency Fund Amount" onblur="validateNumberInput(this, 'emrgFund')" name="emrgFund"></p>
+                                                                <p class="text-much-smaller"><input placeholder="$ Current Emergency Fund Amount" onblur="validateNumberInput(this, 'emrgFund')" name="emrgFund"></p>
                                                             </div>
                                             
                                                             <div class="tab">
                                                                 <h4 class="text-smaller">Roth IRA</h4>
                                                                 <p class="text-muted text-smaller">How much have you contributed to your <strong>Roth IRA</strong> this year? This amount cannot be over $6,500 as that is the highest amount that you can contribute annually.</p>
-                                                                <p><input placeholder="$ Current RothIRA Contribution" onblur="validateRothIRA(this)" name="rothIRA"></p>
+                                                                <p class="text-much-smaller"><input placeholder="$ Current RothIRA Contribution" onblur="validateRothIRA(this)" name="rothIRA"></p>
                                                             </div>
                                                             
                                                             <script>

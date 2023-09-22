@@ -107,7 +107,7 @@ body {
 
 #regForm {
   margin: 0px auto;
-  padding: 40px;
+  padding: 5px;
   border-radius: 10px
 }
 
@@ -117,7 +117,7 @@ color: #1e30f3;
 }
 
 input {
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   font-size: 17px;
   font-family: Raleway;
@@ -148,7 +148,7 @@ button {
   color: #ffffff;
   border: none;
   border-radius: 50%;
-  padding: 10px 20px;
+  padding: 5px 10px;
   font-size: 17px;
   font-family: Raleway;
   cursor: pointer
@@ -2214,10 +2214,13 @@ progress {
   margin-right: 10px; /* Add spacing between the columns */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   /* Styles for screens with a width less than 500 pixels */
   .text-smaller {
-    font-size: 100%; /* Reduce the font size to half */
+    font-size: 120%; /* Reduce the font size to half */
+  }
+  .text-much-smaller {
+    font-size: 70%; /* Reduce the font size to half */
   }
 
   .icon-smaller {
